@@ -54,8 +54,13 @@ const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'N
 // create sortedBands function
 // a will be first thing to compare
 // b will be second thing to compare
+// repeat until sorted list
 const sortedBands = bands.sort(function(a, b) {
-    
+    if(a > b) {
+        return 1;
+    } else {
+        return -1;
+    }
 });
 
 
