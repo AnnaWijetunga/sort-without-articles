@@ -63,6 +63,8 @@ function strip(bandName) {
 };
 
 const sortedBands = bands.sort(function(a, b) {
+    // ternery operator instead
+    return strip(a) > strip(b) ? 1 : -1
     // add strip function here
     if(strip(a) > strip(b)) {
         return 1;
