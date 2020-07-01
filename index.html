@@ -62,15 +62,18 @@ function strip(bandName) {
     return bandName.replace(/^(a |the |an )/i, '').trim();
 };
 
+// const sortedBands = bands.sort(function(a, b) {
+//     // add strip function here
+//     if(strip(a) > strip(b)) {
+//         return 1;
+//     } else {
+//         return -1;
+//     }
+// });
+
 const sortedBands = bands.sort(function(a, b) {
     // ternery operator instead
     return strip(a) > strip(b) ? 1 : -1
-    // add strip function here
-    if(strip(a) > strip(b)) {
-        return 1;
-    } else {
-        return -1;
-    }
 });
 
 
